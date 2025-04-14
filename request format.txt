@@ -1,0 +1,191 @@
+
+    query productSearch(
+        $phrase: String!
+        $pageSize: Int
+        $currentPage: Int = 1
+        $filter: [SearchClauseInput!]
+        $sort: [ProductSearchSortInput!]
+        $context: QueryContextInput
+    ) {
+        productSearch(
+            phrase: $phrase
+            page_size: $pageSize
+            current_page: $currentPage
+            filter: $filter
+            sort: $sort
+            context: $context
+        ) {
+            total_count
+            items {
+                ...Product
+                ...ProductView
+            }
+            page_info {
+                current_page
+                page_size
+                total_pages
+            }
+        }
+        attributeMetadata {
+            sortable {
+                label
+                attribute
+                numeric
+            }
+        }
+    }
+    
+    fragment Product on ProductSearchItem {
+        product {
+            __typename
+            sku
+            description {
+                html
+            }
+            short_description{
+                html
+            }
+            name
+            canonical_url
+            small_image {
+                url
+            }
+            image {
+                url
+            }
+            thumbnail {
+                url
+            }
+            price_range {
+                minimum_price {
+                    fixed_product_taxes {
+                        amount {
+                            value
+                            currency
+                        }
+                        label
+                    }
+                    regular_price {
+                        value
+                        currency
+                    }
+                    final_price {
+                        value
+                        currency
+                    }
+                    discount {
+                        percent_off
+                        amount_off
+                    }
+                }
+                maximum_price {
+                    fixed_product_taxes {
+                        amount {
+                            value
+                            currency
+                        }
+                        label
+                    }
+                    regular_price {
+                        value
+                        currency
+                    }
+                    final_price {
+                        value
+                        currency
+                    }
+                    discount {
+                        percent_off
+                        amount_off
+                    }
+                }
+            }
+        }
+    }
+
+    
+    fragment ProductView on ProductSearchItem {
+        productView {
+            __typename
+            sku
+            name
+            inStock
+            url
+            urlKey
+            images {
+                label
+                url
+                roles
+            }
+            attributes {
+                name
+                label
+            }
+            ... on ComplexProductView {
+                priceRange {
+                    maximum {
+                        final {
+                            amount {
+                                value
+                                currency
+                            }
+                        }
+                        regular {
+                            amount {
+                                value
+                                currency
+                            }
+                        }
+                    }
+                    minimum {
+                        final {
+                            amount {
+                                value
+                                currency
+                            }
+                        }
+                        regular {
+                            amount {
+                                value
+                                currency
+                            }
+                        }
+                    }
+                }
+                options {
+                    id
+                    title
+                    values {
+                        title
+                        ... on ProductViewOptionValueSwatch {
+                            id
+                            inStock
+                            type
+                            value
+                        }
+                    }
+                }
+            }
+            ... on SimpleProductView {
+                price {
+                    final {
+                        amount {
+                            value
+                            currency
+                        }
+                    }
+                    regular {
+                        amount {
+                            value
+                            currency
+                        }
+                    }
+                }
+            }
+        }
+        highlights {
+            attribute
+            value
+            matched_words
+        }
+    }

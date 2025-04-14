@@ -1,0 +1,24 @@
+content-length: 6465
+magento-website-code: base
+x-request-id: d972e6f6-5c58-4845-b14f-9c95df81c612
+sec-ch-ua-platform: "Windows"
+sec-ch-ua: "Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"
+magento-store-view-code: default
+x-api-key: 5c656455c2eb4074ad131b7e7b62ae34
+sec-ch-ua-mobile: ?0
+magento-customer-group: base
+magento-environment-id: a2cbfc39-3883-4bea-b63d-486780aa61d9
+magento-store-code: main_website_store
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+content-type: application/json
+accept: */*
+origin: https://autoparts.toyota.com
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: https://autoparts.toyota.com/products/category/all-products?driveline=2WD+2.4L+4-Cyl+8AT&grade=Limited&series_name=4RUNNER&model_year=2025&model_year_code=2025%3A8648&categories=parts%2Fparts-engine-fuel%2Fparts-engine-fuel-ignition-coil-spark-plug%2Fparts-engine-fuel-ignition-coil-spark-plug-glow-plug
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-US,en;q=0.9
+priority: u=1, i
+cookie: at_check=true; mboxEdgeCluster=34; TOYOTANATIONAL_ENSIGHTEN_PRIVACY_MODAL_VIEWED=1; affinity="d6ff339b9c13d977"; AMCVS_8F8B67C25245B30D0A490D4C%40AdobeOrg=1; s_ecid=MCMID%7C57596725292062902374012576403953270775; AMCV_8F8B67C25245B30D0A490D4C%40AdobeOrg=359503849%7CMCIDTS%7C20187%7CMCMID%7C57596725292062902374012576403953270775%7CMCAAMLH-1744740487%7C7%7CMCAAMB-1744740487%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1744142887s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-20194%7CvVersion%7C5.0.1; tda=CIN10; user_email_id=; user_id=; user_account_type=; tms_vi=3524314547428765_9871038569008792; tms_firstVisitEver=1744135689399; tms_isNew=true; tms_c=test; tms_kmd=%7B%7D; tms_kmv=%7B%7D; act_steppco=; tms_visitList=%7B%7D; tms_visitReferrer=; s_cc=true; _fbp=fb.1.1744135690714.777819026157777061; _gcl_au=1.1.454003444.1744135691; uuid=bc53a791-5d45-4591-92b7-c11cb8be5e60; mbox=session#3da51a5a409e4274b66e3c906c804585#1744137562|PC#3da51a5a409e4274b66e3c906c804585.34_0#1807380502; tms_firstReferrer=https%3A%2F%2Fautoparts.toyota.com%2F
+
